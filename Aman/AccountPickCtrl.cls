@@ -7,10 +7,10 @@ public class AccountPickCtrl
         acc = new Account();
         listAcc = new List<Account>();
     }
-    
+    //Capitalized alphabet  'S'
     public void actionSupportMethod()
     {
-        system.debug('Action++'+acc.Rating);
+        System.debug('Action++'+acc.Rating);
         listAcc = new List<Account>();
         listAcc = [Select Id,Name,Rating FROM Account WHERE Rating =: acc.Rating];
         system.debug('listAcc++'+listAcc);
